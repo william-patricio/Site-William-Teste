@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário com Muitos Inputs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <div class="max-w-6xl mx-auto bg-white p-8 rounded-2xl shadow-md">
+    <h1 class="text-3xl font-bold mb-6 text-center">Formulário com Muitos Campos</h1>
+
+    <form class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Gerar 30 inputs de texto -->
+      <input type="text" placeholder="Campo 1" class="input" />
+      <input type="text" placeholder="Campo 2" class="input" />
+      <input type="text" placeholder="Campo 3" class="input" />
+      <input type="text" placeholder="Campo 4" class="input" />
+      <input type="text" placeholder="Campo 5" class="input" />
+      <input type="text" placeholder="Campo 6" class="input" />
+      <input type="text" placeholder="Campo 7" class="input" />
+      <input type="text" placeholder="Campo 8" class="input" />
+      <input type="text" placeholder="Campo 9" class="input" />
+      <input type="text" placeholder="Campo 10" class="input" />
+      <input type="text" placeholder="Campo 11" class="input" />
+      <input type="text" placeholder="Campo 12" class="input" />
+      <input type="text" placeholder="Campo 13" class="input" />
+      <input type="text" placeholder="Campo 14" class="input" />
+      <input type="text" placeholder="Campo 15" class="input" />
+      <input type="text" placeholder="Campo 16" class="input" />
+      <input type="text" placeholder="Campo 17" class="input" />
+      <input type="text" placeholder="Campo 18" class="input" />
+      <input type="text" placeholder="Campo 19" class="input" />
+      <input type="text" placeholder="Campo 20" class="input" />
+      <input type="text" placeholder="Campo 21" class="input" />
+      <input type="text" placeholder="Campo 22" class="input" />
+      <input type="text" placeholder="Campo 23" class="input" />
+      <input type="text" placeholder="Campo 24" class="input" />
+      <input type="text" placeholder="Campo 25" class="input" />
+      <input type="text" placeholder="Campo 26" class="input" />
+      <input type="text" placeholder="Campo 27" class="input" />
+      <input type="text" placeholder="Campo 28" class="input" />
+      <input type="text" placeholder="Campo 29" class="input" />
+      <input type="text" placeholder="Campo 30" class="input" />
+
+      <!-- Botão de Enviar -->
+      <div class="md:col-span-3 text-center mt-4">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 shadow-md">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <style>
+    .input {
+      @apply w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500;
+    }
+  </style>
+</body>
+</html>

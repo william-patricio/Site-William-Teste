@@ -16,6 +16,9 @@
     </div>
 
     <form id="formulario" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <!-- Campo Nome -->
+      <input type="text" placeholder="Nome" name="nome" class="input md:col-span-3" />
+
       <!-- 30 Inputs -->
       <input type="text" placeholder="Campo 1" class="input" />
       <input type="text" placeholder="Campo 2" class="input" />
@@ -48,7 +51,7 @@
       <input type="text" placeholder="Campo 29" class="input" />
       <input type="text" placeholder="Campo 30" class="input" />
 
-      <!-- NOVO CAMPO TOTAL -->
+      <!-- Campo Total -->
       <input type="text" placeholder="Total" name="total" id="total" class="input md:col-span-3" />
 
       <!-- Botão -->
@@ -69,11 +72,17 @@
   <script>
     document.getElementById('formulario').addEventListener('submit', function(e) {
       e.preventDefault(); // impede envio real
-      document.getElementById('mensagem-sucesso').classList.remove('hidden');
-      // opcional: esconder mensagem depois de 4 segundos
+
+      // Exibir mensagem de sucesso
+      const mensagem = document.getElementById('mensagem-sucesso');
+      mensagem.classList.remove('hidden');
       setTimeout(() => {
-        document.getElementById('mensagem-sucesso').classList.add('hidden');
+        mensagem.classList.add('hidden');
       }, 4000);
+
+      // Limpar todos os inputs
+      const inputs = this.querySelectorAll('input');
+      inputs.forEach(input => input.value = '');
     });
   </script>
 </body>
